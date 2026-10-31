@@ -1,0 +1,120 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile document storing basic account information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128, "description": "Unique user ID matching auth UID" },
+        "email": { "type": "string", "maxLength": 256, "description": "User email address" },
+        "displayName": { "type": "string", "maxLength": 128, "description": "Customer display name" },
+        "photoURL": { "type": "string", "maxLength": 1024, "description": "Avatar URL" },
+        "role": { "type": "string", "enum": ["customer", "admin"], "description": "Role classification" },
+        "createdAt": { "type": "string", "maxLength": 64, "description": "Creation ISO date" },
+        "updatedAt": { "type": "string", "maxLength": 64, "description": "Last update ISO date" }
+      },
+      "required": ["uid", "email", "createdAt"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer placed orders and tracking information",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 64, "description": "Unique order ID" },
+        "userId": { "type": "string", "maxLength": 128, "description": "Customer UID or guest ID" },
+        "customerEmail": { "type": "string", "maxLength": 256, "description": "Customer email" },
+        "customerName": { "type": "string", "maxLength": 128, "description": "Customer full name" },
+        "shippingAddress": { "type": "string", "maxLength": 512, "description": "Delivery address" },
+        "itemsJson": { "type": "string", "maxLength": 65536, "description": "Serialized order items" },
+        "subtotal": { "type": "number", "description": "Order subtotal before discounts" },
+        "discount": { "type": "number", "description": "Discount applied" },
+        "shippingFee": { "type": "number", "description": "Shipping fee" },
+        "total": { "type": "number", "description": "Final order total" },
+        "status": {
+          "type": "string",
+          "enum": ["Order Placed", "Payment Confirmed", "Processing", "Shipped", "Out for Delivery", "Delivered", "Cancelled"],
+          "description": "Fulfillment status"
+        },
+        "trackingNumber": { "type": "string", "maxLength": 64, "description": "Carrier tracking number" },
+        "estimatedDelivery": { "type": "string", "maxLength": 64, "description": "Estimated delivery date" },
+        "createdAt": { "type": "string", "maxLength": 64, "description": "ISO timestamp created" },
+        "updatedAt": { "type": "string", "maxLength": 64, "description": "ISO timestamp updated" }
+      },
+      "required": ["id", "userId", "customerEmail", "total", "status", "createdAt"]
+    },
+    "UserCart": {
+      "title": "UserCart",
+      "description": "User persisted cart items",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128, "description": "User identifier" },
+        "itemsJson": { "type": "string", "maxLength": 65536, "description": "Serialized cart items array" },
+        "updatedAt": { "type": "string", "maxLength": 64, "description": "Last modified timestamp" }
+      },
+      "required": ["userId", "itemsJson", "updatedAt"]
+    },
+    "UserWishlist": {
+      "title": "UserWishlist",
+      "description": "User persisted wishlist products",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128, "description": "User identifier" },
+        "productIdsJson": { "type": "string", "maxLength": 32768, "description": "JSON array of saved product IDs" },
+        "updatedAt": { "type": "string", "maxLength": 64, "description": "Last modified timestamp" }
+      },
+      "required": ["userId", "productIdsJson", "updatedAt"]
+    },
+    "ProductReview": {
+      "title": "ProductReview",
+      "description": "Customer product reviews and ratings",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 64, "description": "Review unique identifier" },
+        "productId": { "type": "string", "maxLength": 64, "description": "Product ID" },
+        "userId": { "type": "string", "maxLength": 128, "description": "Reviewer UID" },
+        "userName": { "type": "string", "maxLength": 128, "description": "Reviewer name" },
+        "rating": { "type": "number", "description": "Star rating 1 to 5" },
+        "comment": { "type": "string", "maxLength": 2048, "description": "Customer feedback" },
+        "createdAt": { "type": "string", "maxLength": 64, "description": "Creation timestamp" }
+      },
+      "required": ["id", "productId", "userId", "userName", "rating", "comment", "createdAt"]
+    },
+    "AdminRecord": {
+      "title": "AdminRecord",
+      "description": "Administrative authority mapping",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "maxLength": 256, "description": "Admin email" },
+        "role": { "type": "string", "maxLength": 64, "description": "Admin role title" },
+        "grantedAt": { "type": "string", "maxLength": 64, "description": "Granted timestamp" }
+      },
+      "required": ["email", "role"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Customer profile documents isolated to owner or admin"
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Purchased orders accessible to order owner and store administrators"
+    },
+    "/carts/{userId}": {
+      "schema": "UserCart",
+      "description": "User shopping carts synced across devices"
+    },
+    "/wishlists/{userId}": {
+      "schema": "UserWishlist",
+      "description": "User wishlist products synced across devices"
+    },
+    "/reviews/{reviewId}": {
+      "schema": "ProductReview",
+      "description": "Public product ratings and reviews posted by verified customers"
+    },
+    "/admins/{userId}": {
+      "schema": "AdminRecord",
+      "description": "Admin identity records"
+    }
+  }
+}

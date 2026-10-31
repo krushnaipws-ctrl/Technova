@@ -1,0 +1,1022 @@
+# PROJECT: BUILD A PREMIUM ELECTRONICS E-COMMERCE WEBSITE
+
+Act as a senior full-stack developer, UI/UX designer, e-commerce architect, and conversion rate optimization expert.
+
+Build a complete, modern, responsive, premium electronics e-commerce website with a professional design, smooth animations, interactive components, and functional shopping features.
+
+The website should look like a premium technology retail brand, combining the usability of Amazon, the clean design of Apple, and the product discovery experience of Best Buy.
+
+Do not create just a static landing page. Build a complete multi-page e-commerce application with reusable components, functional interactions, proper routing, and a scalable architecture.
+
+## 1. BRAND IDENTITY
+
+Create a premium electronics store with the following details:
+
+Brand name: TECHNOVA
+
+Tagline: "Technology That Moves You."
+
+Brand personality:
+- Premium
+- Innovative
+- Reliable
+- Modern
+- Customer-focused
+
+Design direction:
+- Clean, minimalist, premium technology aesthetic.
+- White and light-gray backgrounds.
+- Deep navy and electric blue as primary colors.
+- Subtle gradients and soft shadows.
+- Large, high-quality product photography.
+- Rounded cards with consistent spacing.
+- Smooth hover effects and micro-interactions.
+- Professional typography using Inter, Manrope, or a similar modern font.
+- Mobile-first responsive design.
+
+Suggested color palette:
+- Primary: #2563EB
+- Dark navy: #0F172A
+- Background: #F8FAFC
+- White: #FFFFFF
+- Text: #1E293B
+- Muted text: #64748B
+- Success: #16A34A
+- Sale badge: #EF4444
+
+Create a simple, recognizable TECHNOVA logo using typography and a small technology-inspired symbol.
+
+## 2. WEBSITE STRUCTURE
+
+Create the following pages:
+
+1. Home
+2. All Products
+3. Product Category
+4. Product Details
+5. Search Results
+6. Shopping Cart
+7. Checkout
+8. Customer Login
+9. Customer Registration
+10. Forgot Password
+11. Customer Account Dashboard
+12. Wishlist
+13. Order Tracking
+14. About Us
+15. Contact Us
+16. Frequently Asked Questions
+17. Shipping and Returns
+18. Privacy Policy
+19. Terms and Conditions
+20. Admin Dashboard
+
+Use a proper routing system so every page has its own accessible URL.
+
+## 3. HEADER AND NAVIGATION
+
+Build a premium, responsive header with three levels.
+
+Top announcement bar:
+- Display "MEGA TECH SALE — UP TO 40% OFF SELECTED PRODUCTS"
+- Include a countdown timer.
+- Add a clickable "Shop Deals" button.
+- Use a subtle animated background.
+
+Main navigation:
+- TECHNOVA logo on the left.
+- Large product search bar in the center.
+- Account icon.
+- Wishlist icon with a live item count.
+- Shopping cart icon with a live item count.
+- Mobile hamburger menu.
+
+Category navigation:
+- Smartphones
+- Laptops
+- Audio
+- Gaming
+- Smartwatches
+- Cameras
+- Accessories
+- Smart Home
+- Deals
+
+Create attractive mega menus for desktop category navigation.
+
+The search bar must support:
+- Product name searches.
+- Brand searches.
+- Category searches.
+- Search suggestions.
+- Recent searches.
+- No-results messages.
+- A clear-search button.
+
+Make the header sticky while scrolling.
+
+## 4. HOMEPAGE DESIGN
+
+Build a high-converting homepage with the following sections.
+
+### Section A: Hero Banner
+
+Create a large, premium hero section featuring the latest electronics.
+
+Headline:
+"Upgrade Your World."
+
+Supporting text:
+"Discover the latest technology, exceptional performance, and products designed for your everyday life."
+
+Buttons:
+- Shop Now
+- Explore New Arrivals
+
+Use a high-quality image featuring premium electronics such as a smartphone, laptop, wireless headphones, and smartwatch.
+
+Include:
+- Responsive layouts.
+- Subtle entrance animations.
+- Modern gradient backgrounds.
+- A polished visual hierarchy.
+- Optional carousel navigation.
+
+### Section B: Shop by Category
+
+Create visually appealing category cards for:
+
+1. Smartphones
+2. Laptops & Computers
+3. Headphones & Audio
+4. Gaming Consoles
+5. Smartwatches
+6. Cameras
+7. Smart Home Devices
+8. Accessories
+
+Each card should contain:
+- Category image or illustration.
+- Category name.
+- Short description.
+- Hover animation.
+- Clickable navigation to the relevant category page.
+
+### Section C: Best Sellers
+
+Display a grid of eight bestselling products.
+
+Each product card must include:
+- Product image.
+- Brand.
+- Product name.
+- Star rating.
+- Review count.
+- Original price.
+- Discounted price.
+- Discount percentage.
+- Availability status.
+- Add to Cart button.
+- Add to Wishlist button.
+- Quick View button.
+- Product comparison option.
+
+Add subtle hover animations and image transitions.
+
+### Section D: Promotional Banner
+
+Create a large promotional banner.
+
+Headline:
+"Your Next Upgrade Starts Here."
+
+Supporting text:
+"Explore powerful devices and accessories at prices worth discovering."
+
+CTA: Shop Exclusive Deals.
+
+Use premium product imagery and a visually distinctive layout.
+
+### Section E: New Arrivals
+
+Show the latest products in a horizontally scrollable product carousel.
+
+Include:
+- New Arrival badges.
+- Product ratings.
+- Prices.
+- Quick add-to-cart controls.
+- Navigation arrows.
+- Touch-friendly scrolling on mobile.
+
+### Section F: Exclusive Deals
+
+Create a dedicated deals section featuring:
+- Limited-time offers.
+- Discount badges.
+- Original and discounted prices.
+- Countdown timers.
+- Deal progress indicators where appropriate.
+- Shop Deals buttons.
+
+Countdowns must calculate actual remaining time against a defined end date instead of displaying a hardcoded timer.
+
+### Section G: Featured Brands
+
+Display a clean logo grid featuring brands such as:
+
+- Apple
+- Samsung
+- Sony
+- Dell
+- HP
+- Lenovo
+- ASUS
+- JBL
+- Logitech
+- Canon
+
+Use appropriate brand assets where available and do not present unofficial logos as official brand assets.
+
+Clicking a brand should open its corresponding product listing.
+
+### Section H: Why Shop With Us?
+
+Create four benefit cards:
+
+- Free Shipping on Eligible Orders
+- Secure Payments
+- Genuine Products
+- Easy Returns on Eligible Items
+
+Use modern icons and short descriptions.
+
+Only display shipping, security, warranty, or return guarantees that the store actually supports.
+
+### Section I: Customer Reviews
+
+Build a customer testimonial section with:
+- Customer names.
+- Star ratings.
+- Product purchased.
+- Review text.
+- Optional customer photos.
+- A responsive carousel.
+
+Use clearly labeled sample reviews during development. Do not represent fabricated testimonials as verified customer reviews.
+
+### Section J: Newsletter
+
+Headline:
+"Stay Ahead of the Tech Curve."
+
+Supporting text:
+"Get product launches, exclusive offers, and the latest technology updates."
+
+Include:
+- Email input.
+- Subscribe button.
+- Form validation.
+- Success and error messages.
+- Consent notice where appropriate.
+
+Connect the form to a real email marketing service when configured.
+
+### Section K: Footer
+
+Create a comprehensive footer with:
+
+Customer Service:
+- Contact Us
+- Shipping Information
+- Returns and Refunds
+- Order Tracking
+- FAQs
+
+Shop:
+- Smartphones
+- Laptops
+- Gaming
+- Audio
+- Accessories
+
+Company:
+- About Us
+- Our Story
+- Careers
+- Privacy Policy
+- Terms and Conditions
+
+Include:
+- Social media icons.
+- Newsletter signup.
+- Accepted payment method icons.
+- Copyright information.
+- Back-to-top button.
+
+## 5. PRODUCT CATALOG
+
+Create a reusable product catalog system with realistic sample data.
+
+Include at least 30 sample products across the major categories.
+
+Example products:
+
+Smartphones:
+- Apple iPhone 17
+- Samsung Galaxy S25
+- Google Pixel 10
+
+Laptops:
+- Apple MacBook Air
+- Dell XPS
+- ASUS Zenbook
+- Lenovo ThinkPad
+
+Audio:
+- Sony WH-1000XM6
+- Apple AirPods Pro
+- JBL wireless headphones
+
+Gaming:
+- PlayStation 5
+- Xbox Series X
+- Gaming keyboards
+- Gaming mice
+
+Smartwatches:
+- Apple Watch
+- Samsung Galaxy Watch
+
+Cameras:
+- Canon mirrorless cameras
+- Sony digital cameras
+
+Accessories:
+- USB-C chargers
+- Power banks
+- Wireless keyboards
+- External SSDs
+
+Treat these as illustrative catalog entries. Clearly label demo products and prices until verified inventory and product data are connected.
+
+Each product should have a consistent data structure containing:
+
+- Unique product ID.
+- Product name.
+- Brand.
+- Category.
+- Description.
+- Product images.
+- Price.
+- Original price.
+- Discount.
+- Rating.
+- Review count.
+- Stock status.
+- SKU.
+- Specifications.
+- Available colors.
+- Available variants.
+- Warranty information.
+- Shipping information.
+- Related products.
+- Featured status.
+- New-arrival status.
+- Best-seller status.
+
+Use reusable product cards throughout the website.
+
+## 6. PRODUCT LISTING PAGE
+
+Build a sophisticated product listing page.
+
+Desktop layout:
+- Sidebar filters on the left.
+- Product grid on the right.
+- Sorting and result count above the grid.
+
+Mobile layout:
+- Compact sorting control.
+- Filter drawer.
+- Touch-friendly product cards.
+
+Include functional filters for:
+
+- Category.
+- Brand.
+- Minimum and maximum price.
+- Customer rating.
+- Availability.
+- Discount.
+- Product specifications.
+
+Sorting options:
+- Recommended.
+- Price: Low to High.
+- Price: High to Low.
+- Newest Arrivals.
+- Highest Rated.
+- Best Selling.
+
+Additional functionality:
+- Grid and list views.
+- Active filter chips.
+- Clear All Filters button.
+- Pagination or Load More.
+- Empty-state design.
+- URL query parameters for shareable filter and sorting states.
+
+All filters and sorting controls must operate on the actual product data.
+
+## 7. PRODUCT DETAILS PAGE
+
+Create a professional product detail page with a two-column desktop layout.
+
+Left column:
+- Main product image.
+- Image thumbnail gallery.
+- Image zoom.
+- Full-screen image viewer.
+- Multiple product images.
+
+Right column:
+- Brand.
+- Product name.
+- Rating and reviews.
+- Product SKU.
+- Price.
+- Original price.
+- Discount.
+- Stock status.
+- Short description.
+- Variant selection.
+- Quantity selector.
+- Add to Cart button.
+- Buy Now button.
+- Add to Wishlist button.
+- Estimated delivery information.
+- Warranty details.
+
+Below the main product area, include:
+
+- Product Description.
+- Technical Specifications.
+- Customer Reviews.
+- Shipping and Returns.
+- Frequently Asked Questions.
+- Related Products.
+- Recently Viewed Products.
+
+Functional requirements:
+- Update the displayed price when a priced variant is selected.
+- Validate required variant selections.
+- Prevent adding unavailable products to the cart.
+- Update the cart immediately when a product is added.
+- Display clear success or error feedback.
+- Preserve the selected product variant in the cart.
+
+## 8. SHOPPING CART
+
+Build a fully interactive shopping cart.
+
+Features:
+- Product image and name.
+- Selected product variant.
+- Unit price.
+- Quantity controls.
+- Remove item.
+- Save for Later.
+- Move item to Wishlist.
+- Discount information.
+- Subtotal.
+- Shipping estimate.
+- Tax estimate where applicable.
+- Coupon code field.
+- Order total.
+- Continue Shopping button.
+- Proceed to Checkout button.
+
+Requirements:
+- Recalculate totals whenever the cart changes.
+- Validate coupon codes against configured rules.
+- Display helpful empty-cart recommendations.
+- Prevent invalid quantities.
+- Persist the cart across page refreshes.
+- Synchronize the cart with the user's account when authenticated.
+
+For the frontend prototype, localStorage can be used for guest cart persistence. For production, synchronize carts through the backend.
+
+## 9. CHECKOUT SYSTEM
+
+Create a clean, secure, multi-step checkout experience.
+
+Step 1: Contact Information
+- Email address.
+- Phone number.
+
+Step 2: Shipping Address
+- Full name.
+- Address.
+- Apartment or unit.
+- City.
+- State or region.
+- Postal code.
+- Country.
+
+Step 3: Shipping Method
+- Standard shipping.
+- Express shipping.
+- Delivery estimates based on configured rules.
+
+Step 4: Payment Method
+- Credit or debit card through a payment provider.
+- PayPal or another supported payment provider.
+- Other payment options only where configured.
+
+Step 5: Order Review
+- Products.
+- Quantities.
+- Shipping.
+- Taxes.
+- Discounts.
+- Final total.
+
+Step 6: Confirmation
+- Unique order number.
+- Order summary.
+- Estimated delivery.
+- Continue Shopping button.
+
+Important:
+- Validate every required field.
+- Display clear inline validation errors.
+- Recalculate prices on the server.
+- Never trust client-submitted prices or discount amounts.
+- Never store raw card details.
+- Never collect or expose payment credentials unnecessarily.
+- Use a payment provider's secure checkout or tokenization flow.
+- Do not simulate a successful real payment in production.
+- Keep demo checkout clearly labeled until payment integration is configured.
+
+## 10. USER AUTHENTICATION
+
+Implement customer account functionality.
+
+Features:
+- Registration.
+- Login.
+- Logout.
+- Forgot password.
+- Password reset.
+- Email verification where supported.
+- Account profile.
+- Saved addresses.
+- Order history.
+- Order details.
+- Wishlist.
+- Cart synchronization.
+
+Use a secure authentication provider such as Firebase Authentication or an equivalent supported service.
+
+Do not implement authentication by storing plaintext passwords in localStorage.
+
+Protect account pages so only authenticated users can access their personal information.
+
+## 11. WISHLIST AND PRODUCT COMPARISON
+
+Wishlist:
+- Add and remove products.
+- Persist wishlist data.
+- Display saved products.
+- Move products to cart.
+- Handle unavailable items.
+- Show a live wishlist count.
+
+Product comparison:
+- Select multiple products.
+- Compare prices.
+- Compare ratings.
+- Compare specifications.
+- Compare features.
+- Highlight important differences.
+- Allow products to be removed from comparison.
+
+Use responsive comparison tables and mobile-friendly layouts.
+
+## 12. ORDER TRACKING
+
+Build an order tracking page.
+
+Allow customers to look up an order using the appropriate authenticated account or a secure order lookup flow.
+
+Display:
+- Order number.
+- Order date.
+- Payment status.
+- Fulfillment status.
+- Shipping method.
+- Tracking number when available.
+- Estimated delivery date.
+- Shipment progress timeline.
+
+Possible statuses:
+- Order Placed.
+- Payment Confirmed.
+- Processing.
+- Shipped.
+- Out for Delivery.
+- Delivered.
+- Cancelled.
+
+Connect tracking to the order management backend and shipping provider when configured.
+
+Do not invent live tracking information.
+
+## 13. ADMIN DASHBOARD
+
+Build a separate, protected admin dashboard.
+
+Dashboard overview:
+- Total sales.
+- Total orders.
+- Total customers.
+- Total products.
+- Low-stock products.
+- Recent orders.
+- Sales charts.
+- Top-selling products.
+
+Product management:
+- Add product.
+- Edit product.
+- Delete product.
+- Upload product images.
+- Manage prices.
+- Manage discounts.
+- Manage variants.
+- Manage inventory.
+- Manage categories.
+- Manage brands.
+
+Order management:
+- View orders.
+- Search orders.
+- Filter orders.
+- View order details.
+- Update order status.
+- Manage cancellations and refunds according to configured permissions.
+
+Customer management:
+- View customer accounts.
+- Search customers.
+- Review customer order history.
+- Manage account status with appropriate authorization.
+
+Promotion management:
+- Create coupon codes.
+- Configure discounts.
+- Set minimum order amounts.
+- Configure expiry dates.
+- Configure usage limits.
+
+Content management:
+- Edit homepage banners.
+- Update featured products.
+- Manage promotional sections.
+- Manage announcement bar content.
+
+Security:
+- Restrict admin access to authorized roles.
+- Enforce permissions on the server.
+- Do not rely on hiding admin buttons in the frontend.
+- Validate every administrative action.
+
+## 14. BACKEND AND DATABASE
+
+Create a scalable backend architecture.
+
+Preferred stack:
+- Frontend: React with TypeScript.
+- Build tool: Vite.
+- Styling: Tailwind CSS or a consistent modern CSS architecture.
+- Routing: React Router.
+- Icons: Lucide React.
+- Backend and database: Firebase or Supabase.
+- Authentication: Firebase Authentication or Supabase Auth.
+- Image storage: Firebase Storage or Supabase Storage.
+- Payments: Stripe or another supported payment provider.
+- Charts: Recharts or a similar React charting library.
+
+Choose one coherent backend implementation instead of mixing multiple competing systems unnecessarily.
+
+Recommended database entities:
+- users
+- products
+- categories
+- brands
+- product_variants
+- carts
+- cart_items
+- wishlists
+- orders
+- order_items
+- payments
+- addresses
+- reviews
+- coupons
+- inventory
+- shipping_methods
+
+Use proper relationships, data validation, access control, and database security policies.
+
+Implement backend functions for sensitive operations such as:
+- Order creation.
+- Price calculation.
+- Coupon validation.
+- Inventory updates.
+- Payment confirmation.
+- Refund processing.
+
+Use environment variables for configuration and secrets.
+
+Never expose private API keys, service-role keys, or payment secrets in client-side code.
+
+## 15. DESIGN SYSTEM AND REUSABLE COMPONENTS
+
+Create reusable components for:
+
+- Header.
+- Mega menu.
+- Mobile navigation.
+- Search bar.
+- Announcement bar.
+- Product card.
+- Product grid.
+- Product carousel.
+- Product gallery.
+- Rating display.
+- Price display.
+- Discount badge.
+- Filter sidebar.
+- Filter drawer.
+- Sort dropdown.
+- Cart drawer.
+- Wishlist button.
+- Quantity selector.
+- Modal.
+- Toast notifications.
+- Breadcrumbs.
+- Pagination.
+- Loading skeletons.
+- Empty states.
+- Footer.
+- Form inputs.
+- Buttons.
+- Admin sidebar.
+- Dashboard metric cards.
+
+Maintain consistent spacing, typography, colors, button styles, and responsive behavior.
+
+Avoid duplicated code. Use a clear, maintainable project structure.
+
+## 16. ANIMATIONS AND INTERACTIONS
+
+Add subtle, performance-friendly interactions:
+
+- Smooth page transitions where appropriate.
+- Product card hover effects.
+- Image zoom on hover.
+- Animated add-to-cart feedback.
+- Slide-in cart drawer.
+- Dropdown and mega-menu transitions.
+- Skeleton loading states.
+- Toast notifications.
+- Smooth scrolling.
+- Responsive carousel controls.
+- Button hover and active states.
+
+Respect the user's reduced-motion preferences.
+
+Avoid excessive animations that make the store feel slow or distracting.
+
+## 17. RESPONSIVE DESIGN
+
+Ensure the complete website works on:
+
+- Desktop computers.
+- Laptops.
+- Tablets.
+- Mobile phones.
+
+Requirements:
+- Mobile-first implementation.
+- No horizontal overflow.
+- Touch-friendly buttons.
+- Responsive image sizes.
+- Readable typography.
+- Collapsible navigation.
+- Mobile filter drawer.
+- Responsive product grids.
+- Optimized checkout forms.
+- Proper spacing on small screens.
+
+Test common viewport sizes, including 375px, 768px, 1024px, and 1440px widths.
+
+## 18. SEO AND PERFORMANCE
+
+Implement:
+- SEO-friendly page titles.
+- Meta descriptions.
+- Canonical URLs where appropriate.
+- Open Graph metadata.
+- Semantic HTML.
+- Product structured data where accurate.
+- Sitemap generation.
+- Robots.txt.
+- Descriptive image alt text.
+- Lazy-loaded product images.
+- Optimized image formats.
+- Code splitting where appropriate.
+- Route-level loading states.
+- Error boundaries.
+- Custom 404 page.
+
+Do not invent product ratings, prices, availability, or reviews in structured data.
+
+Aim for strong Core Web Vitals and accessible, fast-loading pages.
+
+## 19. ACCESSIBILITY
+
+Follow WCAG accessibility principles.
+
+Implement:
+- Keyboard-accessible navigation.
+- Visible focus states.
+- Semantic page structure.
+- Accessible form labels.
+- Descriptive button names.
+- Appropriate color contrast.
+- Accessible modal behavior.
+- Screen-reader-friendly status messages.
+- Alternative text for meaningful images.
+- Reduced-motion support.
+
+Do not communicate errors or success states through color alone.
+
+## 20. SECURITY AND RELIABILITY
+
+Implement appropriate protections:
+
+- Server-side input validation.
+- Secure authentication.
+- Role-based authorization.
+- Database access policies.
+- Safe handling of user-generated content.
+- Server-side price and inventory validation.
+- Secure payment integration.
+- Rate limiting where appropriate.
+- Safe error handling.
+- Environment-based configuration.
+- No secrets committed to source control.
+
+For production, use HTTPS and configure suitable security headers.
+
+## 21. DEMO DATA AND DEVELOPMENT MODE
+
+Initially, populate the storefront with realistic sample product data so the design can be explored immediately.
+
+Provide:
+- At least 30 sample products.
+- Multiple categories.
+- Multiple brands.
+- Product images.
+- Sample specifications.
+- Clearly labeled demo prices.
+- Sample promotions.
+- Sample order data for development.
+- Sample admin dashboard metrics.
+
+Keep demo data separate from production data.
+
+When the backend is not configured, provide a clearly labeled demo mode with working frontend interactions.
+
+Do not claim that real orders, payments, email subscriptions, authentication, inventory synchronization, or shipping integrations are operational until they are actually connected and tested.
+
+## 22. PROJECT STRUCTURE
+
+Organize the project into maintainable modules.
+
+Suggested structure:
+
+src/
+  components/
+    layout/
+    navigation/
+    products/
+    cart/
+    checkout/
+    forms/
+    common/
+  pages/
+    Home.tsx
+    Products.tsx
+    ProductDetails.tsx
+    Cart.tsx
+    Checkout.tsx
+    Wishlist.tsx
+    Login.tsx
+    Register.tsx
+    Account.tsx
+    OrderTracking.tsx
+    About.tsx
+    Contact.tsx
+    Admin/
+  hooks/
+  context/
+  services/
+  lib/
+  types/
+  utils/
+  data/
+  styles/
+  App.tsx
+  main.tsx
+
+Adapt this structure when needed, but keep the project modular and understandable.
+
+## 23. TESTING AND QUALITY ASSURANCE
+
+Before considering the application complete, test:
+
+- Navigation between all pages.
+- Search and autocomplete.
+- Category navigation.
+- Filtering and sorting.
+- Product variant selection.
+- Add to cart.
+- Quantity updates.
+- Cart persistence.
+- Wishlist functionality.
+- Coupon validation.
+- Checkout form validation.
+- Authentication and protected routes.
+- Admin permissions.
+- Responsive behavior.
+- Image loading.
+- Error states.
+- Empty states.
+- Page refreshes.
+- Build and deployment.
+
+Fix runtime errors, broken routes, missing assets, TypeScript errors, and console warnings.
+
+Do not leave buttons that look functional but do nothing.
+
+If an external integration requires credentials or account setup, clearly explain the required configuration.
+
+## 24. DEPLOYMENT REQUIREMENTS
+
+Prepare the project for deployment.
+
+Requirements:
+- A working development server.
+- A successful production build.
+- Correct asset paths.
+- Environment variable documentation.
+- Deployment instructions.
+- A README file.
+- A custom 404 page.
+- No hardcoded localhost URLs in production code.
+
+The project may be deployed using a suitable hosting service such as Vercel, Netlify, or GitHub Pages.
+
+Important: If deploying to GitHub Pages, configure the correct Vite base path and client-side routing fallback. Do not assume that backend services, secure authentication flows, or payment processing can run directly on static hosting.
+
+Use a separate backend or managed service for operations that require server-side execution.
+
+## 25. FINAL EXECUTION INSTRUCTIONS
+
+Build the actual application, not just a design mockup or a tutorial.
+
+Start by:
+1. Creating the project structure.
+2. Implementing the design system.
+3. Building the responsive homepage.
+4. Implementing the reusable product catalog.
+5. Creating all major customer-facing pages.
+6. Adding functional cart and wishlist behavior.
+7. Implementing checkout and authentication architecture.
+8. Creating the admin dashboard.
+9. Connecting backend services where credentials are available.
+10. Testing the complete application.
+11. Fixing build errors.
+12. Providing clear deployment instructions.
+
+Prioritize a visually impressive, premium-quality homepage while maintaining functional e-commerce behavior across the application.
+
+If a requirement cannot be fully implemented in the current environment, explain the limitation and build the best working version possible without pretending that incomplete integrations are functional.
+
+FINAL GOAL:
+
+Deliver a polished, modern, premium electronics e-commerce website called TECHNOVA that looks production-ready, provides an excellent shopping experience, works across devices, and has a clear path from prototype to a fully operational online electronics store.

@@ -1,0 +1,8 @@
+{
+  "name": "TECHNOVA - Premium Electronics Store",
+  "description": "Premium electronics e-commerce experience featuring smartphones, laptops, audio, gaming, smartwatches, real-time cart, checkout, order tracking, and Firebase authentication.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
